@@ -3,13 +3,22 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <Button
+    <ImageButton
         android:id="@+id/btnCapture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-
+        android:background="@drawable/ic_panorama_fish_eye_black_48dp"
+        android:layout_above="@id/drawer"
+        android:layout_marginBottom="20dp"
         android:text="Camera" />
+    <include
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        layout="@layout/button_part"
+        android:id="@+id/drawer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
 
+    </include>
 </RelativeLayout>
