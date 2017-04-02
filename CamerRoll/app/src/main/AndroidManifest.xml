@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dianlin.camerroll" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectImageActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,17 +40,12 @@
         </activity>
         <activity
             android:name=".take_attendance">
-            <intent-filter>
-                <action android:name="android.intent.action.FoundPost" />
-                <category android:name="android.intent.category.FoundPost" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".roster">
-            <intent-filter>
-                <action android:name="android.intent.action.FoundPost" />
-                <category android:name="android.intent.category.FoundPost" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".history">
         </activity>
     </application>
 

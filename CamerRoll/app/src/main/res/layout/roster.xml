@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="roster"
+        android:gravity="center">
+    </TextView>
     <include
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
@@ -12,4 +19,4 @@
 
     </include>
 
-</RelativeLayout>
+</LinearLayout>

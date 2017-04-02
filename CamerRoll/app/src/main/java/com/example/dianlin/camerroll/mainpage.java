@@ -26,7 +26,7 @@ public class mainpage extends AppCompatActivity {
         Take_Attendance .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainActivityIntent = new Intent(getApplication(), take_attendance.class);
+                Intent mainActivityIntent = new Intent(getApplication(), SelectImageActivity.class);
                 mainActivityIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(mainActivityIntent);
             }

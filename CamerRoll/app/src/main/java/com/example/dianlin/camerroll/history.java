@@ -14,17 +14,17 @@ import android.widget.Button;
 import android.widget.ImageButton;
 public class history extends AppCompatActivity {
 
-    Button Take_Attendance;
-    Button Class_Roster;
-    Button History;
+    ImageButton Take_Attendance;
+    ImageButton Class_Roster;
+    ImageButton mainpage;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history);
 
-        Take_Attendance = (Button)findViewById(R.id.Take_Attendance);
-        Class_Roster = (Button)findViewById(R.id.Class_Roster);
-        History = (Button)findViewById(R.id.History);
+        Take_Attendance = (ImageButton)findViewById(R.id.take_attendance);
+        Class_Roster = (ImageButton)findViewById(R.id.roster);
+        mainpage = (ImageButton)findViewById(R.id.mainpage);
 
         Take_Attendance .setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,14 +42,15 @@ public class history extends AppCompatActivity {
                 startActivity(mainActivityIntent);
             }
         });
-        History .setOnClickListener(new View.OnClickListener() {
+        mainpage .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainActivityIntent = new Intent(getApplication(), history.class);
+                Intent mainActivityIntent = new Intent(getApplication(), mainpage.class);
                 mainActivityIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(mainActivityIntent);
             }
         });
+
 
     }
 }

@@ -21,7 +21,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_camera_enhance_black_24dp"
                 android:background="@android:color/transparent"
-                android:id="@+id/find" />
+                android:id="@+id/take_attendance" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_home_black_24dp"
                 android:background="@android:color/transparent"
-                android:id="@+id/home" />
+                android:id="@+id/mainpage" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_group_black_24dp"
                 android:background="@android:color/transparent"
-                android:id="@+id/ViewList" />
+                android:id="@+id/roster" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -79,7 +79,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:id="@+id/lost"
+                android:id="@+id/history"
                 android:src="@drawable/ic_view_list_black_24dp"
                 android:layout_centerHorizontal="true"
                 android:adjustViewBounds="true"
@@ -93,7 +93,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Summary"
+                android:text="History"
                 android:gravity="center"/>
 
         </LinearLayout>
