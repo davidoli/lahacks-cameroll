@@ -82,7 +82,7 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/Take_Attendance"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_weight="1"

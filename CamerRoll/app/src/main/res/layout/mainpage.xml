@@ -6,7 +6,7 @@
     android:background="@drawable/background">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Class_Roster"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_weight="1"
@@ -16,9 +16,9 @@
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/sign_in"
-        android:layout_alignStart="@+id/sign_in"
-        android:layout_alignEnd="@+id/sign_in" />
+        android:layout_below="@+id/Take_Attendance"
+        android:layout_alignStart="@+id/Take_Attendance"
+        android:layout_alignEnd="@+id/Take_Attendance" />
 
     <TextView
         android:id="@+id/app_name"
@@ -35,7 +35,7 @@
         android:textColor="@android:color/background_light" />
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/Take_Attendance"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_weight="1"
@@ -50,19 +50,19 @@
         android:layout_alignStart="@+id/app_name" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/History"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_weight="1"
         android:background="@android:color/darker_gray"
         android:onClick="signIn"
-        android:text="Summary"
+        android:text="History"
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_below="@+id/Class_Roster"
+        android:layout_alignStart="@+id/Class_Roster"
+        android:layout_alignEnd="@+id/Class_Roster" />
 
 
 </RelativeLayout>

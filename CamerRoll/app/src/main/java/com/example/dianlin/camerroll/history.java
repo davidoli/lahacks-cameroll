@@ -1,7 +1,10 @@
-/**
- * Created by dianlin on 4/1/17.
- */
 package com.example.dianlin.camerroll;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-public class mainpage extends AppCompatActivity {
+public class history extends AppCompatActivity {
 
     Button Take_Attendance;
     Button Class_Roster;
@@ -17,7 +20,7 @@ public class mainpage extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainpage);
+        setContentView(R.layout.history);
 
         Take_Attendance = (Button)findViewById(R.id.Take_Attendance);
         Class_Roster = (Button)findViewById(R.id.Class_Roster);
