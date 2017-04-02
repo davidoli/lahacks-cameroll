@@ -15,6 +15,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mainpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".summary">
+            <intent-filter>
+                <action android:name="android.intent.action.LOSTPOST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".take_attendance">
+            <intent-filter>
+                <action android:name="android.intent.action.FoundPost" />
+                <category android:name="android.intent.category.FoundPost" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".roster">
+            <intent-filter>
+                <action android:name="android.intent.action.FoundPost" />
+                <category android:name="android.intent.category.FoundPost" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
