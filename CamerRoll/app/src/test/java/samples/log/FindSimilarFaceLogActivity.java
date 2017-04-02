@@ -30,7 +30,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-package log;
+package samples.log;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -47,25 +47,25 @@ import com.microsoft.projectoxford.face.samples.helper.LogHelper;
 
 import java.util.List;
 
-public class DetectionLogActivity extends AppCompatActivity {
+public class FindSimilarFaceLogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detection_log);
+        setContentView(R.layout.activity_find_similar_face_log);
 
         LogAdapter logAdapter = new LogAdapter();
         ListView listView = (ListView) findViewById(R.id.log);
         listView.setAdapter(logAdapter);
     }
 
-    // The adapter of the ListView which contains the detection log.
+    // The adapter of the ListView which contains the find similar face log.
     private class LogAdapter extends BaseAdapter {
-        // The detection log.
+        // The find similar face log.
         List<String> log;
 
         LogAdapter() {
-            log = LogHelper.getDetectionLog();
+            log = LogHelper.getFindSimilarFaceLog();
         }
 
         @Override

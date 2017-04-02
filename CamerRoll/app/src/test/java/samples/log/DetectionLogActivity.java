@@ -30,7 +30,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-package log;
+package samples.log;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -47,25 +47,25 @@ import com.microsoft.projectoxford.face.samples.helper.LogHelper;
 
 import java.util.List;
 
-public class VerificationLogActivity extends AppCompatActivity {
+public class DetectionLogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_verification_log);
+        setContentView(R.layout.activity_detection_log);
 
         LogAdapter logAdapter = new LogAdapter();
         ListView listView = (ListView) findViewById(R.id.log);
         listView.setAdapter(logAdapter);
     }
 
-    // The adapter of the ListView which contains the verification log.
+    // The adapter of the ListView which contains the detection log.
     private class LogAdapter extends BaseAdapter {
-        // The verification log.
+        // The detection log.
         List<String> log;
 
         LogAdapter() {
-            log = LogHelper.getVerificationLog();
+            log = LogHelper.getDetectionLog();
         }
 
         @Override

@@ -30,37 +30,24 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-package ui;
+package samples.helper;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.app.Application;
 
+import com.microsoft.projectoxford.face.FaceServiceClient;
+import com.microsoft.projectoxford.face.FaceServiceRestClient;
 import com.microsoft.projectoxford.face.samples.R;
 
-/**
- * Created by wangjun on 5/24/2016.
- */
-public class VerificationMenuActivity extends AppCompatActivity {
-
-    // When the activity is created, set all the member variables to initial state.
+public class SampleApp extends Application {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_verification_menu);
-    }
-    //face to face verification button click
-    public void faceFaceVerification(View view)
-    {
-        Intent intent = new Intent(this, FaceVerificationActivity.class);
-        startActivity(intent);
+    public void onCreate() {
+        super.onCreate();
+        sFaceServiceClient = new FaceServiceRestClient(getString(R.string.subscription_key));
     }
 
-    //face to face verification button click
-    public void facePersonVerification(View view)
-    {
-        Intent intent = new Intent(this, PersonVerificationActivity.class);
-        startActivity(intent);
+    public static FaceServiceClient getFaceServiceClient() {
+        return sFaceServiceClient;
     }
+
+    private static FaceServiceClient sFaceServiceClient;
 }

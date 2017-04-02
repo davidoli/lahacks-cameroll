@@ -30,7 +30,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-package persongroupmanagement;
+package samples.persongroupmanagement;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -62,8 +62,8 @@ import com.microsoft.projectoxford.face.contract.CreatePersonResult;
 import com.microsoft.projectoxford.face.samples.R;
 import com.microsoft.projectoxford.face.samples.helper.LogHelper;
 import com.microsoft.projectoxford.face.samples.helper.SampleApp;
-import com.microsoft.projectoxford.face.samples.helper.StorageHelper;
 import com.microsoft.projectoxford.face.samples.ui.SelectImageActivity;
+import com.microsoft.projectoxford.face.samples.helper.StorageHelper;
 
 import java.util.ArrayList;
 import java.util.List;
